@@ -1,0 +1,398 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+
+/*禁用长按页面时的弹出菜单*/
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+div {
+    box-sizing: border-box;
+}
+.app {
+    height: 45px;
+    background-color: #333;
+}
+.app ul li {
+    float: left;
+    list-style: none;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+.app ul li:nth-child(1) img{
+    width: 10px;
+}
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img{
+    width: 30px;
+    vertical-align: middle;
+}
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+.search-wrap {
+    height: 44px;
+    background-color: #F63515;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    line-height: 44px;
+    overflow: hidden;
+}
+.search-btn, .search-login {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+}
+.search-btn {
+    top: 0;
+    left: 0;
+}
+.search-login {
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.search-btn img {
+    width: 20px;
+    height: 18px;
+    margin: 10px;
+}
+.search {
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 7px 50px;
+    height: 30px;
+    border-radius: 15px;
+}
+.search img {
+    position: relative;
+    top: -3px;
+    left: 5px;
+    width: 20px;
+    height: 15px;
+}
+/* .search img::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 1px;
+    top: 0;
+    left: -8px;
+    height: 20px;
+    background-color: #ccc;
+} */
+.search i {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    top: 0;
+    left: 4px;
+}
+.search input {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 85%;
+    height: 27px;
+    outline: none;
+    border: none;
+    background-color: #f7f7f7;
+}
+.search span {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background: url(images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    background-size: 100% 100%;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container {
+    width: 100%;
+    height: 140px;
+}  
+.select {
+    height: 165px;
+    /* background-color: pink; */
+}
+.select a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    /* height: 40px; */
+}
+.select a img {
+    width: 40px;
+    margin: 10px auto 0;
+}
+.select a span {
+    display: block;
+    font-size: 12px;
+}
+.miaosha {
+    height: 175px;
+    background-color: white;
+}
+.title {
+    height: 35px;
+    line-height: 35px;
+    padding: 5px 0 5px 5px;
+}
+.one {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.two {
+    display: inline-block;
+    width: 60%;
+    border-radius: 15px;
+    border: 1px solid #f2270c;
+}
+.two i {
+    color: #f10001;
+}
+.three {
+    display: inline-block;
+    width: 40%;
+    background-color: #f10001;
+    border-radius: 15px;
+    color: white;
+}
+.four {
+    float: right;
+    width: 70px;
+    height: 36px;
+    margin-right: 25px;
+    color: #f10001;
+}
+.four img {
+    position: relative;
+    width: 0.7rem;
+    height: 0.7rem;
+    right: -62px;
+    top: -34px;
+}
+.content {
+    margin-top: 20px;
+}
+.content a {
+    float: left;
+    width: 25%;
+    /* flex: 1; */
+    text-align: center;
+}
+.content a img {
+    width: 66px;
+}
+.content span {
+    display: block;
+}
+.content a span:nth-child(3) {
+    text-decoration: line-through;
+}
+.content a span:nth-child(2) {
+    color: #f10001;
+}
+.pic {
+    margin-top: 10px;
+    /* display: flex; */
+}
+.pic img {
+    width: 49%;
+    /* flex: 1; */
+}
+.new {
+    margin-top: 10px;
+}
+.new img {
+    width: 100%;
+}
+/* .sea {
+    margin-top: 10px;
+} */
+.sea img {
+    width: 31%;
+}
+.sea img:nth-child(2) {
+    width: 35%;
+}
+.east {
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.top {
+    display: flex;
+}
+.left,.right {
+    flex: 1;
+    /* background-color: pink; */
+    /* height: 100px; */
+}
+.leftpic img {
+    width: 48%;
+}
+.leftword span {
+    color: #1471FB;
+    font-weight: 700;
+    font-size: 16px;
+}
+.leftword p {
+    margin: 0;
+}
+.bottom {
+    overflow: hidden;
+}
+.bottom a {
+    width: 22%;
+    float: left;
+    padding: 5px;
+}
+.bottom a p {
+    margin: 0;
+    font-size: 12px;
+}
+.bottom a span {
+    font-weight: 700;
+    font-size: 16px;
+}
+.bottom a img {
+    width: 100%;
+}
+.day {
+    background-color: #fff;
+}
+.day a span {
+    color: #F139D2;
+}
+.suggest {
+    /* background-color: #fff; */
+    margin-top: 10px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+.sug1 {
+    width: 48%;
+    /* height: 100px;
+    background-color: pink; */
+    padding: 5px;
+    float: left;
+    background-color: #fff;
+    margin: 3px;
+}
+.sug1 div {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.sug1 img {
+    width: 100%;
+}
+.sug1 div img {
+    width: 30%;
+}
+/* .sug1 div span {
+    float: left;
+} */
+.sug1 div button {
+    float: right;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+.footer a {
+    float: left;
+    width: 20%;
+    height: 52px;
+}
+.footer a img {
+    width: 100%;
+}
